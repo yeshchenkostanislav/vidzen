@@ -1,0 +1,85 @@
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  min-width: 320px;
+  color: $gray
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button,
+input {
+  outline: none
+}
+
+input {
+  color: #8b8b8b;
+
+  &::placeholder {
+    color: #8b8b8b;
+  }
+}
+
+button {
+  font-family: $base-font;
+  background: $blue;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    background: darken($blue, 5%);
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@import "icons";
+
+
+// page logir
+@import "../elements/login/login";
+
+// page registration
+@import "../elements/registration/registration";
+
+// page registration
+@import "../elements/common-elements/header/header";
+@import "../elements/list-players/players/players";
+@import "../elements/common-elements/footer/footer";
+
+
+// form-editor
+@import "../elements/form-editor/settings.scss";

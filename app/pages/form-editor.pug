@@ -1,0 +1,11 @@
+doctype html
+html
+    include ../elements/head/head
+    +head('Form editor', 'Page description', 'Page keywords')
+    body
+        include ../elements/common-elements/header/header
+        include ../elements/form-editor/settings.pug
+        include ../elements/common-elements/footer/footer
+
+        script(src="js/libs.min.js")
+        script(src="js/custom.js")

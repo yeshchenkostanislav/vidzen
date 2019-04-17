@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta name="HandheldFriendly" content="True">
+        <title>list-players</title>
+        <meta name="description" content="Page description" lang="ru">
+        <meta name="keywords" content="Page keywords" lang="ru">
+        <meta property="og:title" content="list-players">
+        <meta property="og:description" content="Page description">
+        <meta property="og:image" content="img/og-image.jpg">
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:url" content="http://yoursite.ru">
+        <link rel="image_src" href="img/og-image.jpg">
+        <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="../app/elements/form-editor/jquery-2.0.3.min.js"></script>
+        <script src="../app/elements/form-editor/jquery.wheelcolorpicker.js"></script>
+        <link href="../app/elements/form-editor/wheelcolorpicker.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-container__logo logo"><i class="icon logo "></i></div>
+                <div class="header-container__nav nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Список проигрывателей</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Настройки</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Помощь</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Выйти</a></li>
+                    </ul>
+                </div>
+                <div class="header-container__user user">
+                    <div class="user__img"><i class="icon user "></i></div>
+                    <div class="user__name">Здравствуйте, Игорь</div>
+                </div>
+            </div>
+        </div>
+        <div class="players">
+            <div class="players-containet">
+                <div class="players-containet__title">Список проигрывателей</div>
+                <div class="players-containet__wrap wrap">
+                    <div class="wrap__item-left">
+                        <div class="wrap__button"><button class="players__button" type="submit">Добавить проигрыватель</button></div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/one.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Проигрыватель <br> для генерации EVA </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/two_.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Бесплатная <br> консультация Док. </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/three.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Проигрыватель на <br> главную EVA </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/three.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Проигрыватель на <br> главную EVA </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/three.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Проигрыватель на <br> главную EVA </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="img/three.png" alt="alt">
+                                <div class="block__triangle"><svg class="icon-triangle block__triangle_whide">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="block__text">
+                                <div class="block__title">Проигрыватель на <br> главную EVA </div>
+                                <div class="block__bid"><svg class="icon-bid ">
+                                        <use xlink:href="img/elements.svg#bid"></use>
+                                    </svg>
+                                    <div class="block__bid-text">10,356</div>
+                                </div>
+                                <div class="block__browsing"><i class="icon browsing "></i>
+                                    <div class="block__browsing-text">37</div>
+                                    <div class="block__browsing-points"><i class="icon points "></i>
+                                        <div class="select">
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Дублировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Редактировать</a></div>
+                                            <div class="select__item"><a class="select__item-link" href="#" title="title">Получить код</a></div>
+                                            <div class="select__item"><a class="select__item-link delete" href="#" title="title">Удалить</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap__item-right">
+                        <div class="wrap__item-right-title">Lorem ipsum dolor sit amet</div>
+                        <div class="wrap__item-right-inf">
+                            <div class="number-views"><svg class="icon-triangle ">
+                                    <use xlink:href="img/elements.svg#triangle"></use>
+                                </svg>
+                                <div class="views-box">
+                                    <div class="views-box__number">10,356</div>
+                                    <div class="views-box__views">Просмотров</div>
+                                </div>
+                            </div>
+                            <div class="number-applications"><svg class="icon-bid number-applications__bid">
+                                    <use xlink:href="img/elements.svg#bid"></use>
+                                </svg>
+                                <div class="applications-box">
+                                    <div class="applications-box__number">37</div>
+                                    <div class="applications-box__applications">Заявок</div>
+                                </div>
+                            </div><button class="button wrap__item-right-infbutton" type="submit">Редактировать форму</button>
+                        </div>
+                        <div class="block-inf">
+                            <div class="block-inf__item">
+                                <div class="block-inf__left">Время запуска формы:</div>
+                                <div class="block-inf__right">1:15</div>
+                            </div>
+                            <div class="block-inf__item">
+                                <div class="block-inf__left">Время показа формы:</div>
+                                <div class="block-inf__right">Нет</div>
+                            </div>
+                            <div class="block-inf__item">
+                                <div class="block-inf__left">Расположение формы:</div>
+                                <div class="block-inf__right">Слева 1/3</div>
+                            </div>
+                            <div class="block-inf__item">
+                                <div class="block-inf__left">Список e-mail адресов:</div>
+                                <div class="block-inf__right">moonlapse@verizon.net, tlinden@sbcglobal.net, kalpol@mac.com</div>
+                            </div>
+                        </div>
+                        <div class="block-title"> Ссылка на проигрыватель</div>
+                        <div class="block-link">src="https://vidzen.ru/embed/cbe9f73ef3167b6fd150574bcd4b2934" frameborder="0"><svg class="icon-copy ">
+                                <use xlink:href="img/elements.svg#copy"></use>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-container__left">
+                    <div class="footer__logo"> <i class="icon logo-big "></i></div>
+                    <div class="footer__text">© 2019. VidZen.ru. Все права защищены.</div>
+                </div>
+                <div class="footer-container__right"><a class="footer__link" href="#">Условия использования</a><a class="footer__link" href="#">Политика конфиденциальности</a></div>
+            </div>
+        </div>
+        <script src="js/libs.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

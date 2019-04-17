@@ -1,0 +1,178 @@
+.form-editor
+
+  .form-editor__title Редактор формы
+
+  .form-editor__wrap.editor-wrap
+
+    .editor-wrap__left
+      .form-settings
+        .form-settings__title 
+          .form-settings__title-text Основные настройки формы
+          .form-settings__title-manipulator
+            +svg('arrow', 'form-settings__browsing')
+        .box   
+          label(for="form-name").form-settings__label Название формы
+            input(type="text" id="form-name" placeholder="Название").form-settings__input             
+          label(for="video-link").form-settings__label Ссылка на оригинальное видео
+            input(type="text" id="video-link" placeholder="URL").form-settings__input             
+          .form-settings__video
+            .opening-time
+              .form-settings__text Время открытия формы
+              .form-settings__time 00:00
+            .opening-duration
+              .form-settings__text Продолжительность
+              .form-settings__time 00:00 
+          label(for="email").form-settings__label Адреса эл. почты для отправки заявок
+            input(type="text" id="email" placeholder="Email").form-settings__input.mail-application
+            .plus &#10010;
+          .form-settings__input-list  
+            input(type="text" placeholder="someemail@email.com").form-settings__input
+            .close &#10006;
+
+
+      .form-design
+        .form-design__title 
+          .form-design__title-text Оформление формы
+          .form-design__title-manipulator
+            +svg('arrow', 'form-settings__browsing')
+        .box   
+          label(for="form-name").form-design__label Оформление формы
+            input(type="text" id="form-name" placeholder="Заголовок").form-design__input             
+             
+          .form-design__layout Расположение формы
+          .layout-box
+            .layout-box__item Слева 1/3
+            .layout-box__item.layout-box__item_activ По центру
+            .layout-box__item Справа 1/3
+          .color-box 
+            .color-box__opacity
+              .color-box__opacity-text Прозрачность фона
+              - var n = 0;
+                select.color-box__opacity-select
+                  while n < 101
+                    option= n++ +'%'
+              .form-design__browsing      
+                +svg('arrow')
+
+            .color-box__bg-color
+              .color-box__bg-color-text Цвет фона
+              .color-box__bg-color-select
+                input(type="text" data-wheelcolorpicker).colorpicker-element.colorpicker-element-code
+                input(type="text" data-wheelcolorpicker).colorpicker-element.colorpicker-element-color
+
+      .form-elements
+        .form-elements__title 
+          .form-elements__title-text Оформление формы
+          .form-elements__title-manipulator
+            +svg('arrow', 'form-settings__browsing')
+        .form-elements-box
+          .form-elements-box__item  
+            input(type="checkbox" id="cb1")
+            label(for="cb1") Поле ввода Имени 
+          .form-elements-box__item  
+            input(type="checkbox" id="cb2")
+            label(for="cb2") Поле ввода адреса эл. почты
+          .form-elements-box__item  
+            input(type="checkbox" id="cb3")
+            label(for="cb3") Поле ввода номера телефона
+
+      .design-form-elements
+        .design-form-elements__title 
+          .design-form-elements__title-text Оформление элементов формы
+          .design-form-elements__title-manipulator
+            +svg('arrow', 'form-settings__browsing')
+        .input-fields
+          .input-fields__one
+            .input-fields__text Поля ввода информации
+            .input-fields__box
+
+              .section__item
+                .section__item-box
+                  .section__item-title Цвет заливки
+                  .block-input
+                    input(type="text" placeholder="#FFFFFF").block-input__code 
+                    input(type="text").block-input__color.block-input__color-white
+
+                .section__item-box
+                  .section__item-title
+                    input(type="checkbox" id="cb4").section__item-checkbox
+                    label(for="cb4").section__item-label Цвет границы
+                  .block-input
+                    input(type="text" placeholder="#F1F1F1").block-input__code 
+                    input(type="text").block-input__color
+
+              .section__item
+                .section__item-box
+                  .section__item-title Цвет текста
+                  .block-input
+                    input(type="text" placeholder="#595959").block-input__code 
+                    input(type="text").block-input__color.block-input__color-darkgray
+
+                .section__item-box
+                  .section__item-title Цвет пустого текста
+                  .block-input
+                    input(type="text" placeholder="#F1F1F1").block-input__code 
+                    input(type="text").block-input__color
+
+
+          .input-fields__two
+            .input-fields__text Оформление кнопки
+            .input-fields__box
+
+              .section__item
+                .section__item-box
+                  .section__item-title Цвет заливки
+                  .block-input
+                    input(type="text" placeholder="#FFFFFF").block-input__code 
+                    input(type="text").block-input__color.block-input__color-blue
+
+                .section__item-box
+                  .section__item-title
+                    input(type="checkbox" id="cb5").section__item-checkbox
+                    label(for="cb5").section__item-label Цвет границы
+                  .block-input
+                    input(type="text" placeholder="#FFFFFF").block-input__code 
+                    input(type="text").block-input__color
+
+              .section__item
+                .section__item-box
+                  .section__item-title Цвет текста
+                  .block-input
+                    input(type="text" placeholder="#FFFFFF").block-input__code
+                    input(type="text").block-input__color.block-input__color-white 
+
+
+
+            
+
+
+
+
+      .preview-post
+        .preview-post__title Предпросмотр и публикация       
+        .preview-post__box
+          button(type='submit').preview-post__btn Сохранить
+          .preview-box
+            +svg('triangle')
+            a(href="#").preview-box__link Предпросмотр формы
+
+
+
+        
+
+
+
+          
+
+    .editor-wrap__right
+      .application-consultation
+        .application-consultation-form
+          ._title Заявка на консультацию
+          label(for="name").consultation-form__label Введите ваше имя
+            input(type="text" id="name" placeholder="Имя").consultation-form__input      
+          label(for="mail").consultation-form__label Адрес эл. почты
+            input(type="text" id="mail" placeholder="Email").consultation-form__input      
+          label(for="tel").consultation-form__label Ваш номер телефона
+            input(type="text" id="tel" placeholder="+7").consultation-form__input 
+          button(type='submit').consultation-form__btn Отправить заявку      
+

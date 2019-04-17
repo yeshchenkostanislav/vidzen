@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta name="HandheldFriendly" content="True">
+        <title>Form editor</title>
+        <meta name="description" content="Page description" lang="ru">
+        <meta name="keywords" content="Page keywords" lang="ru">
+        <meta property="og:title" content="Form editor">
+        <meta property="og:description" content="Page description">
+        <meta property="og:image" content="img/og-image.jpg">
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:url" content="http://yoursite.ru">
+        <link rel="image_src" href="img/og-image.jpg">
+        <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="../app/elements/form-editor/jquery-2.0.3.min.js"></script>
+        <script src="../app/elements/form-editor/jquery.wheelcolorpicker.js"></script>
+        <link href="../app/elements/form-editor/wheelcolorpicker.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-container__logo logo"><i class="icon logo "></i></div>
+                <div class="header-container__nav nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Список проигрывателей</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Настройки</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Помощь</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Выйти</a></li>
+                    </ul>
+                </div>
+                <div class="header-container__user user">
+                    <div class="user__img"><i class="icon user "></i></div>
+                    <div class="user__name">Здравствуйте, Игорь</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-editor">
+            <div class="form-editor__title">Редактор формы</div>
+            <div class="form-editor__wrap editor-wrap">
+                <div class="editor-wrap__left">
+                    <div class="form-settings">
+                        <div class="form-settings__title">
+                            <div class="form-settings__title-text">Основные настройки формы</div>
+                            <div class="form-settings__title-manipulator"><svg class="icon-arrow form-settings__browsing">
+                                    <use xlink:href="img/elements.svg#arrow"></use>
+                                </svg></div>
+                        </div>
+                        <div class="box"> <label class="form-settings__label" for="form-name">Название формы<input class="form-settings__input" type="text" id="form-name" placeholder="Название"></label><label class="form-settings__label" for="video-link">Ссылка на оригинальное видео<input class="form-settings__input" type="text" id="video-link" placeholder="URL"></label>
+                            <div class="form-settings__video">
+                                <div class="opening-time">
+                                    <div class="form-settings__text">Время открытия формы</div>
+                                    <div class="form-settings__time">00:00</div>
+                                </div>
+                                <div class="opening-duration">
+                                    <div class="form-settings__text">Продолжительность</div>
+                                    <div class="form-settings__time">00:00 </div>
+                                </div>
+                            </div><label class="form-settings__label" for="email">Адреса эл. почты для отправки заявок<input class="form-settings__input mail-application" type="text" id="email" placeholder="Email">
+                                <div class="plus">&#10010;</div>
+                            </label>
+                            <div class="form-settings__input-list"> <input class="form-settings__input" type="text" placeholder="someemail@email.com">
+                                <div class="close">&#10006;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-design">
+                        <div class="form-design__title">
+                            <div class="form-design__title-text">Оформление формы</div>
+                            <div class="form-design__title-manipulator"><svg class="icon-arrow form-settings__browsing">
+                                    <use xlink:href="img/elements.svg#arrow"></use>
+                                </svg></div>
+                        </div>
+                        <div class="box"> <label class="form-design__label" for="form-name">Оформление формы<input class="form-design__input" type="text" id="form-name" placeholder="Заголовок"></label>
+                            <div class="form-design__layout">Расположение формы</div>
+                            <div class="layout-box">
+                                <div class="layout-box__item">Слева 1/3</div>
+                                <div class="layout-box__item layout-box__item_activ">По центру</div>
+                                <div class="layout-box__item">Справа 1/3</div>
+                            </div>
+                            <div class="color-box">
+                                <div class="color-box__opacity">
+                                    <div class="color-box__opacity-text">Прозрачность фона</div><select class="color-box__opacity-select">
+                                        <option>0%</option>
+                                        <option>1%</option>
+                                        <option>2%</option>
+                                        <option>3%</option>
+                                        <option>4%</option>
+                                        <option>5%</option>
+                                        <option>6%</option>
+                                        <option>7%</option>
+                                        <option>8%</option>
+                                        <option>9%</option>
+                                        <option>10%</option>
+                                        <option>11%</option>
+                                        <option>12%</option>
+                                        <option>13%</option>
+                                        <option>14%</option>
+                                        <option>15%</option>
+                                        <option>16%</option>
+                                        <option>17%</option>
+                                        <option>18%</option>
+                                        <option>19%</option>
+                                        <option>20%</option>
+                                        <option>21%</option>
+                                        <option>22%</option>
+                                        <option>23%</option>
+                                        <option>24%</option>
+                                        <option>25%</option>
+                                        <option>26%</option>
+                                        <option>27%</option>
+                                        <option>28%</option>
+                                        <option>29%</option>
+                                        <option>30%</option>
+                                        <option>31%</option>
+                                        <option>32%</option>
+                                        <option>33%</option>
+                                        <option>34%</option>
+                                        <option>35%</option>
+                                        <option>36%</option>
+                                        <option>37%</option>
+                                        <option>38%</option>
+                                        <option>39%</option>
+                                        <option>40%</option>
+                                        <option>41%</option>
+                                        <option>42%</option>
+                                        <option>43%</option>
+                                        <option>44%</option>
+                                        <option>45%</option>
+                                        <option>46%</option>
+                                        <option>47%</option>
+                                        <option>48%</option>
+                                        <option>49%</option>
+                                        <option>50%</option>
+                                        <option>51%</option>
+                                        <option>52%</option>
+                                        <option>53%</option>
+                                        <option>54%</option>
+                                        <option>55%</option>
+                                        <option>56%</option>
+                                        <option>57%</option>
+                                        <option>58%</option>
+                                        <option>59%</option>
+                                        <option>60%</option>
+                                        <option>61%</option>
+                                        <option>62%</option>
+                                        <option>63%</option>
+                                        <option>64%</option>
+                                        <option>65%</option>
+                                        <option>66%</option>
+                                        <option>67%</option>
+                                        <option>68%</option>
+                                        <option>69%</option>
+                                        <option>70%</option>
+                                        <option>71%</option>
+                                        <option>72%</option>
+                                        <option>73%</option>
+                                        <option>74%</option>
+                                        <option>75%</option>
+                                        <option>76%</option>
+                                        <option>77%</option>
+                                        <option>78%</option>
+                                        <option>79%</option>
+                                        <option>80%</option>
+                                        <option>81%</option>
+                                        <option>82%</option>
+                                        <option>83%</option>
+                                        <option>84%</option>
+                                        <option>85%</option>
+                                        <option>86%</option>
+                                        <option>87%</option>
+                                        <option>88%</option>
+                                        <option>89%</option>
+                                        <option>90%</option>
+                                        <option>91%</option>
+                                        <option>92%</option>
+                                        <option>93%</option>
+                                        <option>94%</option>
+                                        <option>95%</option>
+                                        <option>96%</option>
+                                        <option>97%</option>
+                                        <option>98%</option>
+                                        <option>99%</option>
+                                        <option>100%</option>
+                                    </select>
+                                    <div class="form-design__browsing"> <svg class="icon-arrow ">
+                                            <use xlink:href="img/elements.svg#arrow"></use>
+                                        </svg></div>
+                                </div>
+                                <div class="color-box__bg-color">
+                                    <div class="color-box__bg-color-text">Цвет фона</div>
+                                    <div class="color-box__bg-color-select"><input class="colorpicker-element colorpicker-element-code" type="text" data-wheelcolorpicker><input class="colorpicker-element colorpicker-element-color" type="text" data-wheelcolorpicker></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <div class="form-elements__title">
+                            <div class="form-elements__title-text">Оформление формы</div>
+                            <div class="form-elements__title-manipulator"><svg class="icon-arrow form-settings__browsing">
+                                    <use xlink:href="img/elements.svg#arrow"></use>
+                                </svg></div>
+                        </div>
+                        <div class="form-elements-box">
+                            <div class="form-elements-box__item"> <input type="checkbox" id="cb1"><label for="cb1">Поле ввода Имени </label></div>
+                            <div class="form-elements-box__item"> <input type="checkbox" id="cb2"><label for="cb2">Поле ввода адреса эл. почты</label></div>
+                            <div class="form-elements-box__item"> <input type="checkbox" id="cb3"><label for="cb3">Поле ввода номера телефона</label></div>
+                        </div>
+                    </div>
+                    <div class="design-form-elements">
+                        <div class="design-form-elements__title">
+                            <div class="design-form-elements__title-text">Оформление элементов формы</div>
+                            <div class="design-form-elements__title-manipulator"><svg class="icon-arrow form-settings__browsing">
+                                    <use xlink:href="img/elements.svg#arrow"></use>
+                                </svg></div>
+                        </div>
+                        <div class="input-fields">
+                            <div class="input-fields__one">
+                                <div class="input-fields__text">Поля ввода информации</div>
+                                <div class="input-fields__box">
+                                    <div class="section__item">
+                                        <div class="section__item-box">
+                                            <div class="section__item-title">Цвет заливки</div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF"><input class="block-input__color block-input__color-white" type="text"></div>
+                                        </div>
+                                        <div class="section__item-box">
+                                            <div class="section__item-title"><input class="section__item-checkbox" type="checkbox" id="cb4"><label class="section__item-label" for="cb4">Цвет границы</label></div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#F1F1F1"><input class="block-input__color" type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="section__item">
+                                        <div class="section__item-box">
+                                            <div class="section__item-title">Цвет текста</div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#595959"><input class="block-input__color block-input__color-darkgray" type="text"></div>
+                                        </div>
+                                        <div class="section__item-box">
+                                            <div class="section__item-title">Цвет пустого текста</div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#F1F1F1"><input class="block-input__color" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-fields__two">
+                                <div class="input-fields__text">Оформление кнопки</div>
+                                <div class="input-fields__box">
+                                    <div class="section__item">
+                                        <div class="section__item-box">
+                                            <div class="section__item-title">Цвет заливки</div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF"><input class="block-input__color block-input__color-blue" type="text"></div>
+                                        </div>
+                                        <div class="section__item-box">
+                                            <div class="section__item-title"><input class="section__item-checkbox" type="checkbox" id="cb5"><label class="section__item-label" for="cb5">Цвет границы</label></div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF"><input class="block-input__color" type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="section__item">
+                                        <div class="section__item-box">
+                                            <div class="section__item-title">Цвет текста</div>
+                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF"><input class="block-input__color block-input__color-white" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-post">
+                        <div class="preview-post__title">Предпросмотр и публикация </div>
+                        <div class="preview-post__box"><button class="preview-post__btn" type="submit">Сохранить</button>
+                            <div class="preview-box"><svg class="icon-triangle ">
+                                    <use xlink:href="img/elements.svg#triangle"></use>
+                                </svg><a class="preview-box__link" href="#">Предпросмотр формы</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-wrap__right">
+                    <div class="application-consultation">
+                        <div class="application-consultation-form">
+                            <div class="application-consultation-form__title">Заявка на консультацию</div><label class="consultation-form__label" for="name">Введите ваше имя<input class="consultation-form__input" type="text" id="name" placeholder="Имя"></label><label class="consultation-form__label" for="mail">Адрес эл. почты<input class="consultation-form__input" type="text" id="mail" placeholder="Email"></label><label class="consultation-form__label" for="tel">Ваш номер телефона<input class="consultation-form__input" type="text" id="tel" placeholder="+7"></label><button class="consultation-form__btn" type="submit">Отправить заявку </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-container__left">
+                    <div class="footer__logo"> <i class="icon logo-big "></i></div>
+                    <div class="footer__text">© 2019. VidZen.ru. Все права защищены.</div>
+                </div>
+                <div class="footer-container__right"><a class="footer__link" href="#">Условия использования</a><a class="footer__link" href="#">Политика конфиденциальности</a></div>
+            </div>
+        </div>
+        <script src="js/libs.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+.icon {
+  display: inline-block;
+
+  //app/elements/list-players/header/icons
+  &.logo {
+    background: url(img/icons/logo.png);
+    width: 60px;
+    height: 35px;
+  }
+
+  &.user {
+    background: url(img/icons/user.png);
+    width: 40px;
+    height: 40px;
+  }
+
+  //app/elements/list-players/footer/icons
+  &.logo-big {
+    background: url(img/icons/logo-big.png) no-repeat;
+    width: 100px;
+    height: 59px;
+    margin-right: 24px;
+  }
+
+  //app/elements/list-players/players/icons
+  &.browsing {
+    background: url(img/icons/browsing.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  &.points {
+    background: url(img/icons/points.png) no-repeat;
+    width: 16px;
+    height: 4px;
+    margin-right: 8px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  //app/elements/list-players/players/svg-icons/copy.svg
+  &-copy {
+    width: 14px;
+    height: 16px;
+    fill: #0043aa;
+  }
+
+  &-triangle {
+    width: 40px;
+    height: 40px;
+    fill: #4b76e4;
+  }
+
+  .triangle_whide {
+    width: 16px;
+    height: 11px;
+    fill: #fff;
+  }
+
+  &-bid {
+    width: 16px;
+    height: 11px;
+    fill: $gray;
+  }
+
+  // app/elements/form-editor/svg-icons/arrow.svg
+  &-arrow {
+    width: 12px;
+    height: 8px;
+    fill: $gray;
+  }
+}

@@ -1,0 +1,251 @@
+.players {
+  padding-top: 56px;
+  padding-bottom: 101px;
+  background: url(img/bg.jpg) no-repeat center/cover;
+
+  &__button {
+    width: 360px;
+    height: 56px;
+  }
+
+  &-containet {
+    max-width: 1161px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 36px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &__wrap {
+      margin-top: 111px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .wrap {
+        &__item-left {
+          max-width: 360px;
+          margin-right: 25px;
+
+          .block {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            padding-right: 16px;
+            margin-top: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            background: #ffffff;
+            border-left: 4px solid transparent;
+            transition: 0.6s;
+
+            &:hover {
+              border-left: 4px solid $blue;
+            }
+
+            &__triangle {
+              display: none;
+              position: absolute;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+
+            &__img {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 24px;
+
+              &:hover {
+                .block__triangle {
+                  display: block;
+                }
+              }
+            }
+
+            &__title {
+              font-size: 18px;
+              font-weight: 600;
+            }
+
+            &__bid {
+              display: flex;
+              align-items: center;
+              margin-top: 21px;
+
+              &-text {
+                font-size: 14px;
+                line-height: 14px;
+                margin-left: 8px;
+              }
+            }
+
+            &__browsing {
+              display: flex;
+              align-items: center;
+              margin-top: 5px;
+
+              &-text {
+                margin-right: 130px;
+                font-size: 14px;
+                line-height: 14px;
+              }
+
+              &-points {
+                position: relative;
+
+                &:hover {
+                  .select {
+                    display: block;
+                  }
+                }
+
+                .select {
+                  position: absolute;
+                  display: none;
+                  margin-left: -52px;
+                  padding: 7px 0;
+
+                  text-align: center;
+                  background: #ffffff;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+
+
+                  &__item-link {
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #595959;
+                    display: block;
+                    width: 120px;
+
+
+
+                    &:hover {
+                      color: #4b76e4;
+                      background-color: rgba(75, 118, 228, 0.16);
+                    }
+                  }
+
+                  .delete {
+                    color: red;
+                  }
+                }
+              }
+            }
+
+            &__triangle_whide {
+              fill: #fff;
+            }
+          }
+        }
+
+        &__item-right {
+          position: sticky;
+          top: 58px;
+          max-width: 776px;
+          padding: 32px;
+          background: #ffffff;
+
+          &-infbutton {
+            width: 291px;
+            height: 56px;
+          }
+
+          .block-inf {
+            max-width: 712px;
+            padding: 16px;
+            padding-top: 9px;
+            margin-top: 38px;
+            background: #f9f9f9;
+
+            &__item {
+              display: flex;
+              justify-content: flex-start;
+              margin-top: 7px;
+            }
+
+            &__left {
+              font-weight: 600;
+              margin-right: 16px;
+            }
+
+            &__right {
+              max-width: 359px;
+            }
+          }
+
+          .block-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+          }
+
+          .block-link {
+            position: relative;
+            padding: 16px;
+            padding-right: 129px;
+            margin-top: 6px;
+            background: #f9f9f9;
+
+            .icon-copy {
+              position: absolute;
+              top: 20px;
+              right: 17px;
+            }
+          }
+
+          &-title {
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          &-inf {
+            display: flex;
+            justify-content: flex-start;
+
+            .number-views {
+              display: flex;
+              align-items: center;
+              margin-right: 32px;
+
+              .views-box {
+                margin-left: 16px;
+              }
+
+            }
+
+            .number-applications {
+              display: flex;
+              align-items: center;
+              margin-right: 144px;
+
+              .applications-box {
+                margin-left: 16px;
+
+                &__applications {
+                  color: #0043aa !important;
+                }
+              }
+
+              &__bid {
+                width: 40px;
+                height: 27px;
+                fill: #4b76e4;
+
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
