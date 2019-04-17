@@ -1,3 +1,3 @@
 $('document').ready(function () {
-    //=require ../elements/**/*.js
+    $(element).wheelColorPicker(options);
 });
