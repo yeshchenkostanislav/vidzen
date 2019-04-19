@@ -1,14 +1,12 @@
-.page-one  
-  .login
-    .login__header
-      .header__enter Вход
-      .header__create-account
-        a(href="#").login__link Создать акаунт
-    label(for="login").login__label Введите логин
-      input(type="text" id="login" placeholder="Логин").login__input  
-    label(for="password").login__label Введите пароль
-      input(type="text" id="password" placeholder="Пароль").login__input  
-    .login__restore
-      a(href="#").login__link Восстановить пароль
-    button(type='submit').login__button Войти
+.auth.section 
+  ._box
+    ._header
+      ._title Вход
+      a(href="#")._link Создать акаунт
+    label._label Введите логин
+      input(type="text" placeholder="Логин")._input  
+    label._label Введите пароль
+      input(type="text" placeholder="Пароль")._input  
+    a(href="#")._link.-restore Восстановить пароль
+    button(type='submit')._button.button Войти
   

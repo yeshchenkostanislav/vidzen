@@ -19,69 +19,65 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="header">
-            <div class="header-container">
-                <div class="header-container__logo logo"><i class="icon logo "></i></div>
-                <div class="header-container__nav nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Список проигрывателей</a></li>
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Настройки</a></li>
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Помощь</a></li>
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Выйти</a></li>
-                    </ul>
-                </div>
-                <div class="header-container__user user">
-                    <div class="user__img"><i class="icon user "></i></div>
-                    <div class="user__name">Здравствуйте, Игорь</div>
+        <div class="header section">
+            <div class="header__wrap wrap">
+                <div class="header__logo"><i class="icon logo "></i></div>
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Список проигрывателей</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Настройки</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Помощь</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Выйти</a></li>
+                </ul>
+                <div class="header__user">
+                    <div class="header__user-foto"><i class="icon user "></i></div>
+                    <div class="header__user-name">Здравствуйте, Игорь</div>
                 </div>
             </div>
         </div>
-        <div class="form-editor">
-            <div class="form-editor__title">Редактор формы</div>
-            <div class="form-editor__wrap editor-wrap">
-                <div class="editor-wrap__left">
-                    <div class="form-settings">
-                        <div class="form-settings__title">
-                            <div class="form-settings__title-text">Основные настройки формы</div>
-                            <div class="form-settings__title-manipulator"><svg class="icon-arrow form-settings__browsing">
-                                    <use xlink:href="img/elements.svg#arrow"></use>
-                                </svg></div>
-                        </div>
-                        <div class="box"> <label class="form-settings__label" for="form-name">Название формы<input class="form-settings__input" type="text" id="form-name" placeholder="Название"></label><label class="form-settings__label" for="video-link">Ссылка на оригинальное видео<input class="form-settings__input" type="text" id="video-link" placeholder="URL"></label>
+        <div class="form-editor section">
+            <div class="form-editor__wrap wrap">
+                <div class="form-editor__title">Редактор формы</div>
+                <div class="form-editor__settings">
+                    <div class="form-editor__settings-list">
+                        <div class="form-settings">
+                            <div class="form-settings__title">
+                                <div class="form-settings__title-text">Основные настройки формы</div>
+                                <div class="form-settings__title-manipulator"><svg class="icon-arrow ">
+                                        <use xlink:href="img/elements.svg#arrow"></use>
+                                    </svg></div>
+                            </div><label class="form-settings__label">Название формы<input class="form-settings__input" type="text" placeholder="Название"></label><label class="form-settings__label">Ссылка на оригинальное видео<input class="form-settings__input" type="text" placeholder="URL"></label>
                             <div class="form-settings__video">
-                                <div class="opening-time">
+                                <div class="form-settings__video-opening-time">
                                     <div class="form-settings__text">Время открытия формы</div>
                                     <div class="form-settings__time">00:00</div>
                                 </div>
-                                <div class="opening-duration">
+                                <div class="form-settings__video-opening-duration">
                                     <div class="form-settings__text">Продолжительность</div>
                                     <div class="form-settings__time">00:00 </div>
                                 </div>
-                            </div><label class="form-settings__label" for="email">Адреса эл. почты для отправки заявок<input class="form-settings__input mail-application" type="text" id="email" placeholder="Email">
+                            </div><label class="form-settings__label">Адреса эл. почты для отправки заявок<input class="form-settings__input mail-application" type="text" placeholder="Email">
                                 <div class="plus">&#10010;</div>
                             </label>
-                            <div class="form-settings__input-list"> <input class="form-settings__input" type="text" placeholder="someemail@email.com">
+                            <div class="form-settings__input-list-mail"> <input class="form-settings__input" type="text" placeholder="someemail@email.com">
                                 <div class="close">&#10006;</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-design">
-                        <div class="form-design__title">
-                            <div class="form-design__title-text">Оформление формы</div>
-                            <div class="form-design__title-manipulator"><svg class="icon-arrow form-settings__browsing">
-                                    <use xlink:href="img/elements.svg#arrow"></use>
-                                </svg></div>
-                        </div>
-                        <div class="box"> <label class="form-design__label" for="form-name">Оформление формы<input class="form-design__input" type="text" id="form-name" placeholder="Заголовок"></label>
-                            <div class="form-design__layout">Расположение формы</div>
-                            <div class="layout-box">
-                                <div class="layout-box__item">Слева 1/3</div>
-                                <div class="layout-box__item layout-box__item_activ">По центру</div>
-                                <div class="layout-box__item">Справа 1/3</div>
+                        <div class="form-settings">
+                            <div class="form-settings__title">
+                                <div class="form-settings__title-text">Оформление формы</div>
+                                <div class="form-settings__title-manipulator"><svg class="icon-arrow ">
+                                        <use xlink:href="img/elements.svg#arrow"></use>
+                                    </svg></div>
+                            </div><label class="form-settings__label">Оформление формы<input class="form-settings__input" type="text" placeholder="Заголовок"></label>
+                            <div class="form-settings__layout-title">Расположение формы</div>
+                            <div class="form-settings__layout-box">
+                                <div class="form-settings__layout-box-item">Слева 1/3</div>
+                                <div class="form-settings__layout-box-item form-settings__layout-box-item_active">По центру</div>
+                                <div class="form-settings__layout-box-item">Справа 1/3</div>
                             </div>
-                            <div class="color-box">
-                                <div class="color-box__opacity">
-                                    <div class="color-box__opacity-text">Прозрачность фона</div><select class="color-box__opacity-select">
+                            <div class="form-settings__color-box">
+                                <div class="form-settings__color-box-opacity">
+                                    <div class="form-settings__color-box-opacity-text">Прозрачность фона</div><select class="form-settings__color-box-opacity-select">
                                         <option>0%</option>
                                         <option>1%</option>
                                         <option>2%</option>
@@ -184,111 +180,105 @@
                                         <option>99%</option>
                                         <option>100%</option>
                                     </select>
-                                    <div class="form-design__browsing"> <svg class="icon-arrow ">
+                                    <div class="form-settings__browsing"> <svg class="icon-arrow ">
                                             <use xlink:href="img/elements.svg#arrow"></use>
                                         </svg></div>
                                 </div>
-                                <div class="color-box__bg-color">
-                                    <div class="color-box__bg-color-text">Цвет фона</div>
-                                    <div class="color-box__bg-color-select"><input class="colorpicker-element colorpicker-element-code" type="text" data-wheelcolorpicker><input class="colorpicker-element colorpicker-element-color" type="text" data-wheelcolorpicker></div>
+                                <div class="form-settings__settings">
+                                    <div class="form-settings__settings-select-title">Цвет фона</div>
+                                    <div class="form-settings__settings-select"><input class="form-settings__settings-select-code colorpicker-element" type="text" placeholder="#F1F1F1" data-wheelcolorpicker><input class="form-settings__settings-select-color colorpicker-element" type="text" data-wheelcolorpicker></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-elements">
-                        <div class="form-elements__title">
-                            <div class="form-elements__title-text">Оформление формы</div>
-                            <div class="form-elements__title-manipulator"><svg class="icon-arrow form-settings__browsing">
-                                    <use xlink:href="img/elements.svg#arrow"></use>
-                                </svg></div>
+                        <div class="form-settings">
+                            <div class="form-settings__title">
+                                <div class="form-settings__title-text">Оформление формы</div>
+                                <div class="form-settings__title-manipulator"><svg class="icon-arrow ">
+                                        <use xlink:href="img/elements.svg#arrow"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="form-settings__elements-checkbox-item"> <input class="form-settings__elements-checkbox-input" type="checkbox" id="cb1"><label class="form-settings__elements-checkbox-label" for="cb1">Поле ввода Имени </label></div>
+                            <div class="form-settings__elements-checkbox-item"> <input class="form-settings__elements-checkbox-input" type="checkbox" id="cb2"><label class="form-settings__elements-checkbox-label" for="cb2">Поле ввода адреса эл. почты</label></div>
+                            <div class="form-settings__elements-checkbox-item"> <input class="form-settings__elements-checkbox-input" type="checkbox" id="cb3"><label class="form-settings__elements-checkbox-label" for="cb3">Поле ввода номера телефона</label></div>
                         </div>
-                        <div class="form-elements-box">
-                            <div class="form-elements-box__item"> <input type="checkbox" id="cb1"><label for="cb1">Поле ввода Имени </label></div>
-                            <div class="form-elements-box__item"> <input type="checkbox" id="cb2"><label for="cb2">Поле ввода адреса эл. почты</label></div>
-                            <div class="form-elements-box__item"> <input type="checkbox" id="cb3"><label for="cb3">Поле ввода номера телефона</label></div>
-                        </div>
-                    </div>
-                    <div class="design-form-elements">
-                        <div class="design-form-elements__title">
-                            <div class="design-form-elements__title-text">Оформление элементов формы</div>
-                            <div class="design-form-elements__title-manipulator"><svg class="icon-arrow form-settings__browsing">
-                                    <use xlink:href="img/elements.svg#arrow"></use>
-                                </svg></div>
-                        </div>
-                        <div class="input-fields">
-                            <div class="input-fields__one">
-                                <div class="input-fields__text">Поля ввода информации</div>
-                                <div class="input-fields__box">
-                                    <div class="section__item">
-                                        <div class="section__item-box">
-                                            <div class="section__item-title">Цвет заливки</div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color block-input__color-white" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                        <div class="form-settings">
+                            <div class="form-settings__title">
+                                <div class="form-settings__title-text">Оформление элементов формы</div>
+                                <div class="form-settings__title-manipulator"><svg class="icon-arrow ">
+                                        <use xlink:href="img/elements.svg#arrow"></use>
+                                    </svg></div>
+                            </div>
+                            <div class="form-settings__input-fields">
+                                <div class="form-settings__input-fields-text">Поля ввода информации</div>
+                                <div class="form-settings__input-fields-box">
+                                    <div class="form-settings__section-item">
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title">Цвет заливки</div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color block-input__color-white" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
-                                        <div class="section__item-box">
-                                            <div class="section__item-title"><input class="section__item-checkbox" type="checkbox" id="cb4"><label class="section__item-label" for="cb4">Цвет границы</label></div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#F1F1F1" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title"><input class="form-settings__elements-checkbox-input section__item-checkbox" type="checkbox" id="cb4"><label class="section-item-label" for="cb4">Цвет границы</label></div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#F1F1F1" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
                                     </div>
-                                    <div class="section__item">
-                                        <div class="section__item-box">
-                                            <div class="section__item-title">Цвет текста</div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#595959" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color block-input__color-darkgray" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                    <div class="form-settings__section-item">
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title">Цвет текста</div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#595959" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color block-input__color-darkgray" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
-                                        <div class="section__item-box">
-                                            <div class="section__item-title">Цвет пустого текста</div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#F1F1F1" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title">Цвет пустого текста</div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#F1F1F1" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="input-fields__two">
-                                <div class="input-fields__text">Оформление кнопки</div>
-                                <div class="input-fields__box">
-                                    <div class="section__item">
-                                        <div class="section__item-box">
-                                            <div class="section__item-title">Цвет заливки</div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color block-input__color-blue" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                <div class="form-settings__input-fields-text"> Оформление кнопки</div>
+                                <div class="form-settings__input-fields-box">
+                                    <div class="form-settings__section-item">
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title">Цвет заливки</div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color block-input__color-blue" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
-                                        <div class="section__item-box">
-                                            <div class="section__item-title"><input class="section__item-checkbox" type="checkbox" id="cb5"><label class="section__item-label" for="cb5">Цвет границы</label></div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title"><input class="form-settings__elements-checkbox-input section__item-checkbox" type="checkbox" id="cb5"><label class="section-item-label" for="cb5">Цвет границы</label></div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
                                     </div>
-                                    <div class="section__item">
-                                        <div class="section__item-box">
-                                            <div class="section__item-title">Цвет текста</div>
-                                            <div class="block-input"><input class="block-input__code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="block-input__color block-input__color-white" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
+                                    <div class="form-settings__section-item">
+                                        <div class="form-settings__section-item-box">
+                                            <div class="form-settings__section-item-title">Цвет текста</div>
+                                            <div class="form-settings__block-input"><input class="form-settings__block-input-code" type="text" placeholder="#FFFFFF" data-wheelcolorpicker data-wcp-format="css"><input class="form-settings__block-input-color block-input__color-white" type="text" data-wheelcolorpicker="" data-wcp-sliders="wv" data-wcp-preview="true"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="preview-post">
-                        <div class="preview-post__title">Предпросмотр и публикация </div>
-                        <div class="preview-post__box"><button class="preview-post__btn" type="submit">Сохранить</button>
-                            <div class="preview-box"><svg class="icon-triangle ">
-                                    <use xlink:href="img/elements.svg#triangle"></use>
-                                </svg><a class="preview-box__link" href="#">Предпросмотр формы</a></div>
+                        <div class="preview-post">
+                            <div class="preview-post__title">Предпросмотр и публикация </div>
+                            <div class="preview-post__box"><button class="preview-post__btn button" type="submit">Сохранить</button>
+                                <div class="preview-post__preview-form"><svg class="icon-triangle ">
+                                        <use xlink:href="img/elements.svg#triangle"></use>
+                                    </svg><a class="preview-post__link" href="#">Предпросмотр формы</a></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="editor-wrap__right">
-                    <div class="application-consultation">
-                        <div class="application-consultation-form">
-                            <div class="application-consultation-form__title">Заявка на консультацию</div><label class="consultation-form__label" for="name">Введите ваше имя<input class="consultation-form__input" type="text" id="name" placeholder="Имя"></label><label class="consultation-form__label" for="mail">Адрес эл. почты<input class="consultation-form__input" type="text" id="mail" placeholder="Email"></label><label class="consultation-form__label" for="tel">Ваш номер телефона<input class="consultation-form__input" type="text" id="tel" placeholder="+7"></label><button class="consultation-form__btn" type="submit">Отправить заявку </button>
+                    <div class="form-editor__preview">
+                        <div class="form-editor__preview-video">
+                            <div class="form-editor__preview-video-form">
+                                <div class="form-editor__preview-video-form-title">Заявка на консультацию</div><label class="consultation-form__label" for="name">Введите ваше имя<input class="consultation-form__input" type="text" id="name" placeholder="Имя"></label><label class="consultation-form__label" for="mail">Адрес эл. почты<input class="consultation-form__input" type="text" id="mail" placeholder="Email"></label><label class="consultation-form__label" for="tel">Ваш номер телефона<input class="consultation-form__input" type="text" id="tel" placeholder="+7"></label><button class="consultation-form__btn button" type="submit"> Отправить заявку </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer-container">
-                <div class="footer-container__left">
+        <div class="footer section">
+            <div class="footer__wrap wrap">
+                <div class="footer__rights-reserved">
                     <div class="footer__logo"> <i class="icon logo-big "></i></div>
                     <div class="footer__text">© 2019. VidZen.ru. Все права защищены.</div>
                 </div>
-                <div class="footer-container__right"><a class="footer__link" href="#">Условия использования</a><a class="footer__link" href="#">Политика конфиденциальности</a></div>
+                <div class="footer__links"><a class="footer__link" href="#">Условия использования</a><a class="footer__link" href="#">Политика конфиденциальности</a></div>
             </div>
         </div>
         <script src="js/libs.min.js"></script>

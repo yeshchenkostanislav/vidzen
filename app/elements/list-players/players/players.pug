@@ -1,190 +1,177 @@
-.players
-  .players-containet
+.players.section 
+  ._wrap.wrap
     ._title Список проигрывателей
-    ._wrap.wrap
-      .wrap__item-left
+    ._content
 
-        .wrap__button
-          button(type='submit').players__button Добавить проигрыватель
-
-        .block
-          .block__img
+      ._list
+        a(href="#")._button.button Добавить проигрыватель
+        ._player
+          ._player-preview
             img(src="img/one.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Проигрыватель <br> для генерации EVA   
-            .block__bid
-              +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
-                +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
+            ._triangle
+              +svg('triangle', 'players__triangle_whide')
 
-        .block
-          .block__img
+          ._player-info
+            ._player-title Проигрыватель <br> для генерации EVA   
+            ._player-bid
+              +svg('bid')
+              ._player-bid-info 10,356
+            ._player-browsing
+              ._player-browsing-info               
+                  +icon('browsing')
+                  ._player-browsing-number 37
+              ._player-browsing-points
+                +icon('points')
+                ._player-select
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Дублировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Редактировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Получить код
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link.delete Удалить
+
+        ._player
+          ._player-preview
             img(src="img/two_.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Бесплатная <br> консультация Док.   
-            .block__bid
-              +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
-                +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
+            ._triangle
+              +svg('triangle', 'players__triangle_whide')
 
-        .block
-          .block__img
-            img(src="img/three.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Проигрыватель на <br> главную EVA 
-            .block__bid
+          ._player-info
+            ._player-title Проигрыватель <br> для генерации EVA   
+            ._player-bid
               +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
+              ._player-bid-info 10,356
+            ._player-browsing
+              ._player-browsing-info               
+                  +icon('browsing')
+                  ._player-browsing-number 37
+              ._player-browsing-points
                 +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
-        .block
-          .block__img
-            img(src="img/three.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Проигрыватель на <br> главную EVA 
-            .block__bid
-              +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
-                +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
-        .block
-          .block__img
-            img(src="img/three.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Проигрыватель на <br> главную EVA 
-            .block__bid
-              +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
-                +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
-        .block
-          .block__img
-            img(src="img/three.png", alt="alt").img
-            .block__triangle
-              +svg('triangle', 'block__triangle_whide')
-          .block__text 
-            .block__title Проигрыватель на <br> главную EVA 
-            .block__bid
-              +svg('bid')
-              .block__bid-text 10,356
-            .block__browsing
-              +icon('browsing')
-              .block__browsing-text 37
-              .block__browsing-points
-                +icon('points')
-                .select
-                  ._item
-                    a(href="#", title="title").select__item-link Дублировать
-                  ._item
-                    a(href="#", title="title").select__item-link Редактировать
-                  ._item
-                    a(href="#", title="title").select__item-link Получить код
-                  ._item
-                    a(href="#", title="title").select__item-link.delete Удалить
+                ._player-select
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Дублировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Редактировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Получить код
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link.delete Удалить
 
-      .wrap__item-right 
-        .wrap__item-right-title Lorem ipsum dolor sit amet
-        .wrap__item-right-inf
-          .number-views
+        ._player
+          ._player-preview
+            img(src="img/three.png", alt="alt").img
+            ._triangle
+              +svg('triangle', 'players__triangle_whide')
+
+          ._player-info
+            ._player-title Проигрыватель <br> для генерации EVA   
+            ._player-bid
+              +svg('bid')
+              ._player-bid-info 10,356
+            ._player-browsing
+              ._player-browsing-info               
+                  +icon('browsing')
+                  ._player-browsing-number 37
+              ._player-browsing-points
+                +icon('points')
+                ._player-select
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Дублировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Редактировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Получить код
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link.delete Удалить
+        ._player
+          ._player-preview
+            img(src="img/three.png", alt="alt").img
+            ._triangle
+              +svg('triangle', 'players__triangle_whide')
+
+          ._player-info
+            ._player-title Проигрыватель <br> для генерации EVA   
+            ._player-bid
+              +svg('bid')
+              ._player-bid-info 10,356
+            ._player-browsing
+              ._player-browsing-info               
+                  +icon('browsing')
+                  ._player-browsing-number 37
+              ._player-browsing-points
+                +icon('points')
+                ._player-select
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Дублировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Редактировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Получить код
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link.delete Удалить
+        ._player
+          ._player-preview
+            img(src="img/three.png", alt="alt").img
+            ._triangle
+              +svg('triangle', 'players__triangle_whide')
+
+          ._player-info
+            ._player-title Проигрыватель <br> для генерации EVA   
+            ._player-bid
+              +svg('bid')
+              ._player-bid-info 10,356
+            ._player-browsing
+              ._player-browsing-info               
+                  +icon('browsing')
+                  ._player-browsing-number 37
+              ._player-browsing-points
+                +icon('points')
+                ._player-select
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Дублировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Редактировать
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link Получить код
+                  ._player-select-item
+                    a(href="#", title="title")._player-select-link.delete Удалить
+                    
+
+      ._info
+        ._info-title Lorem ipsum dolor sit amet
+        ._info-header
+          ._info-views
             +svg('triangle')
-            .views-box
-              .views-box__number 10,356
-              .views-box__views Просмотров
-          .number-applications
-            +svg('bid', 'number-applications__bid')
-            .applications-box
-              .applications-box__number 37
-              .applications-box__applications Заявок
-          button(type='submit').button.wrap__item-right-infbutton Редактировать форму
+            ._info-stat
+              ._info-stat-name 10,356
+              ._info-stat-number Просмотров
+          ._info-applications
+            +svg('bid', 'players__info-applications__bid')
+            ._info-stat
+              ._info-stat-name 37
+              ._info-stat-number-blue Заявок
+          a(href="#").button._info-button Редактировать форму
         
-        .block-inf
-          ._item
-            .block-inf__left Время запуска формы:
-            .block-inf__right 1:15
-          ._item
-            .block-inf__left Время показа формы:
-            .block-inf__right Нет
-          ._item
-            .block-inf__left Расположение формы:
-            .block-inf__right Слева 1/3
-          ._item
-            .block-inf__left Список e-mail адресов:
-            .block-inf__right moonlapse@verizon.net, tlinden@sbcglobal.net, kalpol@mac.com
+        ._info-options
+          ._info-options-item
+            ._info-options-item-title Время запуска формы:
+            ._info-options-item-value 1:15
+          ._info-options-item
+            ._info-options-item-title Время показа формы:
+            ._info-options-item-value Нет
+          ._info-options-item
+            ._info-options-item-title Расположение формы:
+            ._info-options-item-value Слева 1/3
+          ._info-options-item
+            ._info-options-item-title Список e-mail адресов:
+            ._info-options-item-value moonlapse@verizon.net, tlinden@sbcglobal.net, kalpol@mac.com
 
-        .block-title  Ссылка на проигрыватель
-        .block-link src="https://vidzen.ru/embed/cbe9f73ef3167b6fd150574bcd4b2934" frameborder="0">
+        ._info-player  
+          ._info-player-title Ссылка на проигрыватель      
+          textarea._info-player-link
+            <iframe src="https://vidzen.ru/embed/cbe9f73ef3167b6fd150574bcd4b2934"> </iframe>   
           +svg('copy')
 
               

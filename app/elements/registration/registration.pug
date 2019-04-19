@@ -1,14 +1,16 @@
-.page-two  
-  .login
-    .login__header Регистрация
-    label(for="login").login__label Ваше имя
-      input(type="text" id="login" placeholder="Имя").login__input  
-    label(for="password").login__label Ваша фамилия
-      input(type="text" id="password" placeholder="Фамилия").login__input  
-    label(for="password").login__label Адрес эл. почты
-      input(type="email" id="password" placeholder="E-mail").login__input  
-    label(for="password").login__label Пароль
-      input(type="text" id="password" placeholder="Пароль").login__input  
-    label(for="password").login__label Подтвердите пароль
-      input(type="text" id="password" placeholder="Подверждение").login__input  
-    button(type='submit').login__button Зарегистрироваться
+.auth.section 
+  ._box
+    ._header
+      ._title Регистрация
+      a(href="#")._link Уже есть аккаунт?
+    label._label Ваше имя
+      input(type="text" placeholder="Имя")._input  
+    label._label Ваша фамилия
+      input(type="text" placeholder="Фамилия")._input  
+    label._label Адрес эл. почты
+      input(type="text" placeholder="E-mail")._input  
+    label._label Пароль
+      input(type="text" placeholder="Пароль")._input  
+    label._label Подтвердите пароль
+      input(type="text" placeholder="Подверждение")._input  
+    button(type='submit').auth__button.button Зарегистрироваться

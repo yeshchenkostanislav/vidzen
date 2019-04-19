@@ -40,7 +40,7 @@ input {
   }
 }
 
-button {
+.button {
   font-family: $base-font;
   background: $blue;
   border: none;
@@ -71,9 +71,6 @@ button {
 
 // page logir
 @import "../elements/login/login";
-
-// page registration
-@import "../elements/registration/registration";
 
 // page registration
 @import "../elements/common-elements/header/header";

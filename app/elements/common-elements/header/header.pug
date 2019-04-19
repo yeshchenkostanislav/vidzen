@@ -1,18 +1,17 @@
-.header
-  .header-container
-    ._logo.logo
+.header.section
+  ._wrap.wrap
+    ._logo
       +icon('logo')
-    ._nav.nav
-      ul.nav-list
-        li.nav-list__item
-          a(href="#").nav-list__link Список проигрывателей
-        li.nav-list__item
-          a(href="#").nav-list__link Настройки
-        li.nav-list__item
-          a(href="#").nav-list__link Помощь
-        li.nav-list__item
-          a(href="#").nav-list__link Выйти
-    ._user.user
-      .user__img
+    ul._nav
+      li._nav-item
+        a(href="#")._nav-link Список проигрывателей
+      li._nav-item
+        a(href="#")._nav-link Настройки
+      li._nav-item
+        a(href="#")._nav-link Помощь
+      li._nav-item
+        a(href="#")._nav-link Выйти
+    ._user
+      ._user-foto
         +icon('user')
-      .user__name Здравствуйте, Игорь
+      ._user-name Здравствуйте, Игорь
