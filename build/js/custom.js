@@ -17,4 +17,10 @@ $('document').ready(function () {
     color($('[data-role="button-fill-color"]'), $('[data-role="preveiw-button-fill-color"]'));
     color($('[data-role="button-border-color"]'), $('[data-role="preveiw-button-border-color"]'));
     color($('[data-role="button-text-color"]'), $('[data-role="preveiw-button-text-color"]'));
+
+    $('.header__menu-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('header__menu-btn_active');
+        $('.header__nav').toggleClass('header__nav_active');
+    });
 });
