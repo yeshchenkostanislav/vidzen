@@ -1,6 +1,7 @@
 .header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
+  padding: 12px 0;
 
   &__wrap {
     width: 1140px;
@@ -11,21 +12,11 @@
   }
 
   &__nav {
-    &-item {
-      display: inline-block;
-
-      &:hover {
-        .header__nav-link::after {
-          width: 61%;
-        }
-      }
-    }
 
     &-link {
       position: relative;
-      display: block;
       color: grey;
-      padding: 20px 32px;
+      padding: 20px 15px;
       height: 100%;
 
       &:after {
@@ -33,7 +24,7 @@
         content: '';
         left: 50%;
         transform: translateX(-50%);
-        bottom: -2px;
+        bottom: -3px;
         height: 2px;
         width: 0;
         background: $blue;
@@ -43,10 +34,14 @@
       &:hover {
         color: darken(grey, 20%);
         cursor: pointer;
+
+        .header__nav-link:after {
+          width: 90%;
+        }
+
       }
     }
   }
-
 
   &__user {
     display: flex;
@@ -56,4 +51,10 @@
       margin-right: 16px;
     }
   }
+}
+
+.header__nav-link:hover:after {
+
+  width: 65%;
+
 }

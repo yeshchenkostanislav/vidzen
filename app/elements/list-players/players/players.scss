@@ -1,5 +1,4 @@
 .players {
-  padding-top: 100px;
   padding-bottom: 100px;
   background: url(img/bg.jpg) no-repeat center/cover;
   flex-direction: column;
@@ -12,6 +11,7 @@
   &__title {
     font-size: 36px;
     font-weight: 600;
+    padding: 100px 0;
     text-align: center;
   }
 
@@ -27,7 +27,6 @@
     max-width: 1161px;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
   }
 
   &__list {

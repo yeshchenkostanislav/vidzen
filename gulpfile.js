@@ -51,12 +51,12 @@ let path = {
         vendor_js: [
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/swiper/dist/js/swiper.js',
-            'bower_components/jquery-wheelcolorpicker-master/jquery.wheelcolorpicker.js'
+            'app/js/jquery.wheelcolorpicker.js'
         ],
         vendor_css: [
             'bower_components/normalize-css/normalize.css',
             'bower_components/swiper/dist/css/swiper.css',
-            'bower_components/jquery-wheelcolorpicker-master/css/wheelcolorpicker.css'
+            'app/scss/wheelcolorpicker.css'
         ]
     },
     watch: {

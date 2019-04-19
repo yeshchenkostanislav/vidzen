@@ -11,6 +11,12 @@
     flex-direction: row;
   }
 
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__rights-reserved {
     display: flex;
     align-items: center;
