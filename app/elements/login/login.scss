@@ -65,12 +65,13 @@
 @media(max-width: 576px) {
   .auth {
     &__box {
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     &__input {
-      width: 290px;
+      width: 100%;
     }
   }
 }
