@@ -6,6 +6,7 @@
 
   &__wrap {
     align-items: center;
+    max-width: 1160px;
   }
 
   &__title {
@@ -24,7 +25,6 @@
   }
 
   &__content {
-    max-width: 1161px;
     display: flex;
     justify-content: center;
   }
@@ -50,7 +50,6 @@
   }
 
   &__player {
-    max-width: 360px;
     display: flex;
     align-items: center;
     padding: 24px;
@@ -208,7 +207,7 @@
   }
 
   &__info-options {
-    max-width: 712px;
+
     padding: 16px;
     padding-top: 9px;
     margin-top: 38px;
@@ -317,10 +316,7 @@
       font-size: 30px;
     }
 
-    &__button {
-      width: 338px;
-      max-width: 338px;
-    }
+    &__button {}
 
     &__list {
       flex-direction: column;
@@ -371,9 +367,13 @@
   .players {
     padding-bottom: 50px;
 
-    &__player {
-      width: 100%;
+    &__wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+
     }
+
+    &__player {}
 
     &__list {
       max-width: 100%;
@@ -384,17 +384,24 @@
       padding: 25px 0;
     }
 
-    &__button {
-      max-width: 100%;
-    }
+    &__button {}
 
     &__player-title {
       font-size: 15px;
     }
 
-    &__info-title {
-      font-size: 22px;
+    &__info {
+
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-button {
+        width: 100%;
+      }
     }
+
 
     &__player-select {
       margin-left: -89px;
