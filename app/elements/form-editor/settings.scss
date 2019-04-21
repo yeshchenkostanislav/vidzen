@@ -560,8 +560,14 @@
         width: 100%;
       }
     }
-
   }
+
+  .form-settings {
+    &__input-fields-box {
+      padding: 16px 24px;
+    }
+  }
+
 
 }
 
@@ -586,7 +592,7 @@
       width: 100%;
 
       &-fields-box {
-        padding-right: 0;
+        padding: 0 15px;
       }
 
       &-group-mail {
@@ -616,6 +622,11 @@
       flex-direction: column;
       align-items: flex-start;
 
+      &-opacity-select {
+        width: 270px;
+        margin-right: 0;
+      }
+
     }
 
     &__elements-checkbox {
@@ -631,8 +642,13 @@
 
 
     &__section-item {
-      flex-direction: column;
-      align-items: flex-start;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+
+      &-box {
+        max-width: 212px;
+      }
     }
 
     &__layout-box-item {
@@ -641,8 +657,16 @@
 
     &__settings {
       margin-top: 7px;
+
+      &-select {
+        width: 270px;
+        justify-content: space-around;
+      }
     }
 
+    &__block-input {
+      width: 100%;
+    }
   }
 
   .preview-post {
